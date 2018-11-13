@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="94px"
+                android:layout_height="36px"
+                android:scaleType="fitXY"
+                android:src="@drawable/lanbai_up_left"/>
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_height="36px"
+                android:layout_weight="1"
+                android:background="@drawable/lanbai_up_mid"
+                android:text="柳州银行歌仙杯电视歌手大赛柳州银行歌仙杯电视歌手大赛"
+                android:lines="1"
+                android:textColor="#ffffff"
+                android:textSize="18px"/>
+
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:scaleType="fitXY"
+                android:src="@drawable/lanbai_up_right"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="94px"
+                android:layout_height="23px"
+                android:scaleType="fitXY"
+                android:src="@drawable/lanbai_down_left"/>
+
+            <TextView
+                android:id="@+id/txt_reporter"
+                android:layout_width="0dp"
+                android:layout_height="23px"
+                android:layout_weight="1"
+                android:background="@drawable/lanbai_down_mid"
+                android:scaleType="fitXY"
+                android:text="记者 罗笛 戴欣 刘益"
+                android:lines="1"
+                android:textColor="#5089c8"
+                android:textSize="14px"/>
+
+            <ImageView
+                android:layout_width="23px"
+                android:layout_height="23px"
+                android:scaleType="fitXY"
+                android:src="@drawable/lanbai_down_right"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="#1a1a1a"
+                android:orientation="vertical">
+
+    <!-- 内容部分 -->
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_bottom_tab"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="98px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottomnav_bg"
+        android:baselineAligned="true"
+        android:gravity="center_vertical|bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_preview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/bottom_nav_previewbtn_h" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_operation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" >
+
+            <ImageView
+                android:id="@+id/iv_operation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/bottom_nav_operationbtn_n" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:src="@drawable/bottom_nav_settingbtn_n" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
